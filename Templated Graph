@@ -1,0 +1,36 @@
+ #include<bits/stdc++.h>
+ #include<map>
+ #include<list>
+ #include<cstring >
+ using namespace std;
+ template <typename T>
+ class graph
+ {
+   map<T,list<pair<T,int >> > adjlist;
+   public :
+       void print()
+       {
+         for(auto row : adjlist )
+         {
+           cout<<row.first <<"->";
+            for(auto edge : row.second  )
+                cout<<edge.first <<" "<< edge.second<<endl;
+            cout<<endl;
+         }
+       }
+       void add(T u,T e,int w)
+       {
+         adjlist[u].push_back({e,w});
+         adjlist[e].push_back({u,w});
+       }
+
+ };
+ int main()
+ {
+   graph <string >g;
+   g.add("kanha", "shivam",100);
+   g.add("kanhaiya", "shiva",200); g.add("kanha", "shivani",300);
+   g.add("priya", "shivam",400); g.add("kanha", "shiva",500);
+
+   g.print();
+ }
