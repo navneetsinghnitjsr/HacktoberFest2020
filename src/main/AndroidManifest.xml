@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dip.dipay.login">
+    package="com.dip.dipay.recycleview">
 
     <application
         android:allowBackup="true"
@@ -16,14 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".registation" />
-        <activity android:name=".Login" />
-        <activity android:name=".RegistationActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LogoutActivity" />
-        <activity android:name=".Activity" />
-        <activity android:name=".Logout1Activity"></activity>
     </application>
 
 </manifest>
