@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/lay12"
+        android:layout_below="@+id/lay11"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/cancel_icon"/>
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_toRightOf="@id/img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELLATION POLICY"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_below="@id/txt7"
+            android:layout_toRightOf="@id/img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_below="@id/txt8"
+            android:layout_toRightOf="@id/img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+            android:textColor="#fff"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_below="@id/txt9"
+            android:layout_toRightOf="@id/img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+            android:textColor="#fff"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay13"
+        android:layout_below="@id/lay12"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/exclamation"
+            />
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_toRightOf="@id/img8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THINGS TO NOTE"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_toRightOf="@id/img8"
+            android:layout_below="@id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            android:text="           Lorem Ipsum is simply dummy text of the printing and
+           typesettig industry.Lorem Ipsum has been the
+           industry's standard dummy text ever since 1950s,
+           when an unknown printer took a gallery of type and
+           scrambled it to make a type specimen book."
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/lay13"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        >
+        <ImageView
+            android:id="@+id/net1"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wifi_icon"
+            />
+        <TextView
+            android:id="@+id/data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free WiFi"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:id="@+id/net2"
+            android:layout_toRightOf="@id/net1"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/internet_icon"
+            />
+        <TextView
+            android:id="@+id/data2"
+            android:layout_toRightOf="@id/data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Internet
+     Access"
+            android:layout_marginLeft="21dp"
+            android:textSize="13sp"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:id="@+id/net3"
+            android:layout_toRightOf="@id/net2"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/breakfast_icon"
+            />
+        <TextView
+            android:id="@+id/data3"
+            android:layout_toRightOf="@id/data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast
+ Included"
+            android:layout_marginLeft="17dp"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:id="@+id/net4"
+            android:layout_toRightOf="@id/net3"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/kitchen_icon"
+            />
+        <TextView
+            android:id="@+id/data4"
+            android:layout_toRightOf="@id/data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:textSize="13sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:layout_toRightOf="@id/net4"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/airport_icon"
+            />
+        <TextView
+            android:layout_toRightOf="@id/data4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="  Airport
+Transfers"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

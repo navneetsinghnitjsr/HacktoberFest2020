@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+<RelativeLayout
+    android:layout_below="@+id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/me1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROPERTY INFORMATION"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/me2"
+        android:layout_below="@id/me1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galary of type and scrambled it to make a type specimen book.
+
+More..."/>
+    <ImageView
+        android:layout_below="@id/me2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image_map"
+        android:background="@drawable/au"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:id="@+id/text_Lonsdale"
+        android:layout_below="@id/image_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30 Lonsdale St, Braddon Act 2612,Australia"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dummy_text"
+        android:textColor="#ffff"
+        android:textSize="13sp"
+        android:layout_below="@id/text_Lonsdale"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry.Lorem Ipsum has been the industryu's standard dummy text ever since 1950s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.
+
+More.."
+        />
+    <RelativeLayout
+        android:id="@+id/lay11"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/dummy_text"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/policy_icon"
+            android:id="@+id/image_report"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:text="POLICIES"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_below="@id/txt4"
+            android:layout_toRightOf="@id/image_report"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/revw_white_deselect"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_below="@id/txt4"
+            android:layout_toRightOf="@id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Friendly"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            />
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_below="@id/txt5"
+            android:layout_toRightOf="@id/image_report"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/revw_white_deselect"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_below="@id/txt5"
+            android:layout_toRightOf="@id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Curfew"
+            android:layout_marginLeft="15dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            />
+        <ImageView
+        android:layout_below="@id/img6"
+        android:layout_toRightOf="@id/image_report"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/revw_white_deselect"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="10dp"
+        />
+        <TextView
+            android:layout_below="@id/txt6"
+            android:layout_toRightOf="@id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxes Included"
+            android:layout_marginLeft="15dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
