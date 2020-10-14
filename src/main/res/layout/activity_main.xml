@@ -1,87 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_grey"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <GridView
+        android:id="@+id/GridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="5dp"
+        android:layout_centerVertical="true"
+        android:verticalSpacing="5dp"
+        android:layout_centerHorizontal="true"/>
 
-    <RelativeLayout
-        android:id="@+id/me1"
-        android:layout_width="410dp"
-        android:layout_height="330dp">
-        <ImageView
-            android:id="@+id/me2"
-            android:layout_width="170dp"
-            android:layout_height="265dp"
-            android:src="@drawable/ch_1"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
-            />
-     <ImageView
-         android:layout_toRightOf="@id/me2"
-         android:layout_width="130dp"
-         android:layout_height="95dp"
-         android:src="@drawable/bubble_green"
-         android:layout_marginTop="30dp"/>
-
-        <TextView
-            android:layout_toRightOf="@id/me2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Continue as
-   A Visitor"
-            android:textColor="#fff"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="18dp"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="70dp"
-            android:src="@drawable/wow"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="80dp"
-            android:layout_marginRight="55dp"/>
-    </RelativeLayout>
-    <RelativeLayout
-
-        android:layout_below="@id/me1"
-        android:layout_width="410dp"
-        android:layout_height="330dp">
-
-
-    <RelativeLayout
-        android:layout_width="410dp"
-        android:layout_height="330dp"
-        />
-        <ImageView
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            android:src="@drawable/ch_2"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="80dp"
-            android:layout_alignParentRight="true"
-            />
-        <ImageView
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:src="@drawable/bubble_orange"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="35dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login as
-AVendor"
-            android:textColor="#fff"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="68dp"
-            android:textSize="19sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
 </RelativeLayout>
