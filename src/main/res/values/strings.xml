@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SharedPrefCheck</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="headline">Choose Your Options</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile No</string>
+    <string name="reenter">confirm Password</string>
+    <string name="email">Email Id</string>
+    <string name="logout">LogOut</string>
+    <string name="welcome">Welcome to your login page\n Hope You Liked the tour of simple Shared Preference Example</string>
+
+
+</resources>
