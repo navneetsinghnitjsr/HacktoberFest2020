@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="trans">#998abbda</color>
+    <color name="blue">	#18B8EA</color>
+    <color name="blue1">#4ac7ef</color>
+    <color name="bluetrans">#43fafeff</color>
+    <color name="transs">#89a1bec5</color>
+    <color name="tan">#69D8EBF0</color>
 </resources>

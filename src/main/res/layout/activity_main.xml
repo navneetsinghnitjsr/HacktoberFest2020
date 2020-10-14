@@ -1,19 +1,1087 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <GridView
-        android:id="@+id/GridView"
+     <RelativeLayout
+         android:id="@+id/lay2"
+         android:layout_width="match_parent"
+         android:layout_height="240dp"
+         android:background="@drawable/property_image"
+         >
+         <RelativeLayout
+             android:id="@+id/lay1"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:background="@color/trans">
+             <ImageView
+                 android:id="@+id/img1"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_marginTop="14dp"
+                 android:layout_marginLeft="12dp"
+                 android:padding="3dp"
+                 android:src="@drawable/img_arrowleft"/>
+             <ImageView
+                 android:id="@+id/img2"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:src="@drawable/blubr_save"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="12dp"
+                 android:layout_marginRight="10dp"
+                 />
+             <ImageView
+                 android:layout_width="30dp"
+                 android:layout_height="28dp"
+                 android:layout_marginTop="13dp"
+                 android:src="@drawable/share_icon"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="55dp"
+                 />
+         </RelativeLayout>
+
+             <TextView
+                 android:layout_below="@id/lay1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="9th of july"
+                 android:layout_marginTop="150dp"
+                 android:textSize="15sp"
+                 android:textColor="#fff"
+                 android:textStyle="bold"
+                 android:layout_marginLeft="10dp"/>
+     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay3"
+        android:layout_below="@id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/map_icon"
+            android:padding="1dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Lonsdale St, Braddon ACT 2612,  Australia"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+      android:layout_below="@id/lay3"
+        android:id="@+id/scroll_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnWidth="100dp"
-        android:numColumns="auto_fit"
-        android:horizontalSpacing="5dp"
-        android:layout_centerVertical="true"
-        android:verticalSpacing="5dp"
-        android:layout_centerHorizontal="true"/>
+        android:background="@drawable/img_bg">
+
+        <RelativeLayout
+            android:id="@+id/scroll_relative_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="120dp">
+
+            <LinearLayout
+                android:id="@+id/rel_scroll_sec"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/blue"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:background="@color/bluetrans"
+                    android:text="70%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Very Good"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:src="@drawable/msg" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5 Reviews"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_scroll_sec"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Value For Money"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1.1"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".5"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="80%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_first"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Security"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".8"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".8"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="50%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_sec"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Location"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".7"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".9"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="60%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_third"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Staff"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".6"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="70%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_fifth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_fourth"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Atmosphere"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1.1"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".5"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="80%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_sixth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_fifth"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Cleanliness"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1.2"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".4"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="90%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_seventh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_sixth"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Facilities"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".6"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:text="80%"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/linear_seventh"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REVIEWS"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txt3">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/lay4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/img4"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's
+standard dummy text even since the 1500s.when an un-
+known printer took a gallary of type and scrambled it to
+make a type specimen book."
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/lay5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lay4"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight=".40"
+                        android:background="@color/blue"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight=".13"
+                        android:background="#fff"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight=".1"
+                        android:text="9.1"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lay5"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brayan William, Female, Canada"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="italic"
+                        android:paddingLeft="60dp"/>
+
+                </LinearLayout>
+
+
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lay7"
+                android:layout_below="@id/ass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                   android:id="@+id/ass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ic_user" />
+                <TextView
+                    android:id="@+id/ass2"
+                    android:layout_toRightOf="@id/ass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's
+standard dummy text even since the 1500s.when an un-
+known printer took a gallary of type and scrambled it to
+make a type specimen book."
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/ass3"
+                    android:layout_below="@id/ass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".40"
+                    android:background="@color/blue"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight=".13"
+                    android:background="#fff"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight=".1"
+                    android:text="9.1"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+              </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ass3"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brayan William, Female, Canada"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="italic"
+                       android:paddingLeft="60dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lay8"
+                android:layout_below="@id/lay7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEE MORE REVIEWS"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+            <View
+                android:id="@+id/lay9"
+                android:layout_below="@id/lay8"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transs"
+                android:padding="30dp"
+                android:layout_marginTop="40dp"
+                />
+            <LinearLayout
+                android:layout_below="@id/lay9"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:id="@+id/Linear_new"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:background="@color/bluetrans"
+                    android:text="New"
+                    android:textColor="#fff"
+                    android:paddingLeft="4dp"
+                    android:textSize="20sp" />
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:src="@drawable/msg2"
+                    android:paddingLeft="165dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="5 Reviews"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/rel_facilities"
+               android:layout_below="@id/Linear_new"
+               android:layout_marginTop="8dp"
+               android:layout_marginLeft="9dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FACILITIES"
+                   android:textSize="17sp"
+                   android:textColor="#fff"
+                   android:textStyle="bold"
+                   />
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                  android:src="@drawable/icon_menu"
+                   android:layout_alignParentRight="true"
+                      />
+           </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line4"
+                android:layout_below="@id/rel_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+            >
+            <ImageView
+                android:id="@+id/net1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/wifi_icon"
+                />
+            <TextView
+                android:id="@+id/data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free WiFi"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/net2"
+                android:layout_toRightOf="@id/net1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/internet_icon"
+                />
+            <TextView
+                android:id="@+id/data2"
+                android:layout_toRightOf="@id/data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Internet\n      Access"
+
+                android:textSize="11sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="23dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/net3"
+                android:layout_toRightOf="@id/net2"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/breakfast_icon"
+                />
+            <TextView
+                android:id="@+id/data3"
+                android:layout_toRightOf="@id/data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast \n Included"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/net4"
+                android:layout_toRightOf="@id/net3"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/kitchen_icon"
+                />
+            <TextView
+                android:id="@+id/data4"
+                android:layout_toRightOf="@id/data3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+                android:textSize="11sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_toRightOf="@id/net4"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/airport_icon"
+                />
+            <TextView
+                android:layout_toRightOf="@id/data4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                android:text="   Airport \nTransfers"
+                android:layout_marginLeft="32dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+            <View
+                android:id="@+id/lay14"
+                android:layout_below="@id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transs"
+                android:layout_marginTop="20dp"
+                >
+                </View>
+
+
+
+            <RelativeLayout
+                android:id="@+id/fun2"
+                android:layout_below="@id/lay14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                >
+                <TextView
+                    android:id="@+id/me1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROPERTY INFORMATION"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/me2"
+                    android:layout_below="@id/me1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galary of type and scrambled it to make a type specimen book.
+
+More..."/>
+                <ImageView
+                    android:layout_below="@id/me2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/image_map"
+                    android:background="@drawable/map_view"
+                    android:layout_marginTop="25dp"/>
+                <TextView
+                    android:layout_margin="8dp"
+                    android:id="@+id/text_Lonsdale"
+                    android:layout_below="@id/image_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30 Lonsdale St, Braddon Act 2612,Australia"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dummy_text"
+                    android:textColor="#ffff"
+                    android:textSize="13sp"
+                    android:layout_below="@id/text_Lonsdale"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry.Lorem Ipsum has been the industryu's standard dummy text ever since 1950s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.
+
+More.."
+                    />
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/dummy_text"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/policy_icon"
+                        android:id="@+id/image_report"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="65dp"
+                        android:text="POLICIES"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_below="@id/txt4"
+                        android:layout_toRightOf="@id/image_report"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/revw_white_deselect"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_below="@id/txt4"
+                        android:layout_toRightOf="@id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Child Friendly"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        />
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_below="@id/txt5"
+                        android:layout_toRightOf="@id/image_report"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/revw_white_deselect"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="7dp"
+                        />
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_below="@id/txt5"
+                        android:layout_toRightOf="@id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Curfew"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        />
+                    <ImageView
+                        android:layout_below="@id/img6"
+                        android:layout_toRightOf="@id/image_report"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/revw_white_deselect"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_below="@id/txt6"
+                        android:layout_toRightOf="@id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taxes Included"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay12"
+                android:layout_below="@id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/cancel_icon"/>
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCELLATION POLICY"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="30dp"
+                    />
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_below="@id/txt7"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_below="@id/txt8"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:layout_below="@id/txt9"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesettig industry."
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fun"
+                android:layout_below="@id/lay12"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/exclamation"
+                    />
+                <TextView
+                    android:id="@+id/txt10"
+                    android:layout_toRightOf="@id/img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THINGS TO NOTE"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="30dp"
+                    />
+                <TextView
+                    android:layout_toRightOf="@id/img8"
+                    android:layout_below="@id/txt10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingRight="2dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and
+ typesettig industry. Lorem Ipsum has been the
+industry's standard dummy text ever since 1950s,
+when an unknown printer took a gallery of type and
+ scrambled it to make a type specimen book."
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/fun2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue1"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="CHOOSE ROOM"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
