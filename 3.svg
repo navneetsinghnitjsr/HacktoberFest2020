@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000"><defs>
+<style>
+.cls-1{fill:none;stroke-miterlimit:10;stroke-width:19px;stroke:url(#linear-gradient);}
+svg{
+animation-name:rotate;animation-duration:50s;animation-iteration-count:infinite; animation-direction:linear;}
+@keyframes rotate{
+0%{
+transform:rotateZ(0deg);
+}
+
+100%{
+transform:rotateZ(360deg);
+}
+}
+</style>
+<linearGradient id="linear-gradient" x1="-3611.32" y1="-6735.57" x2="-3467.06" y2="-6848.28" gradientTransform="translate(-6335.07 4027.25) rotate(90)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00b1eb"/><stop offset="1" stop-color="#3b50a0"/></linearGradient></defs><title>Untitled-1</title>
+<polygon class="cls-1" points="571.25 500 428.75 417.73 428.75 582.27 571.25 500"/>
+</svg>

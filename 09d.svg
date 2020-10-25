@@ -1,0 +1,27 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.81 167.81"><defs>
+<style>.cls-1{fill:#444045;}
+svg{
+animation-name:rotate;animation-duration:4s;animation-iteration-count:infinite; animation-direction:linear;}
+@keyframes rotate{
+0%{
+transform:rotateZ(0deg);
+}
+
+25%{
+transform:rotateZ(90deg);
+}
+
+50%{
+transform:rotateZ(180deg);
+}
+
+75%{
+transform:rotateZ(270deg);
+}
+
+100%{
+transform:rotateZ(360deg);
+}
+}
+</style>
+</defs><title>cross dark</title><rect class="cls-1" x="64.21" y="13.69" width="39.4" height="140.43" transform="translate(-34.75 83.91) rotate(-45)"/><rect class="cls-1" x="64.21" y="13.69" width="39.4" height="140.43" transform="translate(83.91 -34.75) rotate(45)"/></svg>
